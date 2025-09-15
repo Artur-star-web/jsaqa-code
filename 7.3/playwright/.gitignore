@@ -10,3 +10,10 @@
 
 # Local History for Visual Studio Code
 .history/
+
+/user.js
+
+test-results/
+
+# Screenshots
+screenshots/

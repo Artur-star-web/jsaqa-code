@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright"
+    "test": "playwright test",
+    "test:auth": "playwright test auth.spec.js",
+    "test:auth:screenshots": "playwright test auth.spec.js --headed --timeout=60000",
+    "test:headed": "playwright test --headed"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.12.3",
+    "@playwright/test": "^1.55.0",
     "playwright": "^1.12.3"
   }
 }
