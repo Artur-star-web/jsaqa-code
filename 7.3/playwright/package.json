@@ -1,18 +1,14 @@
 {
-  "name": "jsaqa_3_2",
+  "name": "netology-playwright-tests",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:auth": "playwright test auth.spec.js",
-    "test:auth:screenshots": "playwright test auth.spec.js --headed --timeout=60000",
-    "test:headed": "playwright test --headed"
+    "test:headed": "playwright test --headed",
+    "test:auth": "playwright test tests/auth.spec.js",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.55.0",
-    "playwright": "^1.12.3"
+    "@playwright/test": "^1.40.0"
   }
 }
